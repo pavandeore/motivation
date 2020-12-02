@@ -1,1 +1,40 @@
-Motivation
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivation</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="first">
+            <h2 class="heading">Internship</h2><br/>
+            <div class="day-div">
+            </div>
+            <div class="remaining">
+            </div>
+        </div>
+        <div class="second"><br/>
+        
+                <div>
+                    <input type="text" id="txtName" placeholder="Enter Today's Task Title" />
+                </div>
+                <div>
+                    <input type="Date" id="txtDate" placeholder="Enter Today's Date" />
+                </div>
+                <div>
+                    <textarea id="msg" name="msg" placeholder="Write some message ..." style="height:80px"></textarea>
+                </div>
+                <div>
+                    <input type="button" id="bt" value="Save data to file" onclick="saveFile()" />
+                </div>
+        </div>
+    </div>
+
+    <script defer src="./app.js"></script>
+</body>
+
+</html>

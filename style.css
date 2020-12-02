@@ -1,0 +1,92 @@
+:root{
+    --black : #252525;
+    --white : rgb(233, 220, 220);
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    background: var(--black);
+}
+.first{
+    height: 45vh;
+}
+.heading{
+    padding-top: 20px;
+    text-align: center;
+    color: var(--white);    
+    font-size: 44px;
+    animation-name: zoom-in;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.day-div{
+    margin-top: 50px;
+    text-align: center;
+    color: var(--white);    
+    font-size: 30px;
+
+    animation-name: zoom-in-once;
+    animation-duration: 2s;
+}
+.remaining{
+    text-align: center;
+    color: var(--white);    
+    font-size: 30px;
+
+    animation-name: zoom-in-once;
+    animation-duration: 1.5s;
+}
+.second{
+    background: var(--white);
+    color: var(--black);
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    padding: 10px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+textarea{
+    margin: 10px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+[placeholder]{
+    font-size: 1.2em;
+}
+#bt{
+    padding: 10px 50px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+#bt:hover{
+    background: var(--black);
+    color: var(--white);
+}
+@keyframes zoom-in{
+    from{transform: scale(0.90);}
+    to{transform: scale(1);}
+}
+@keyframes zoom-in-once{
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+
+@media (max-width:400px){
+    input{
+        width: 80vw;
+    }
+    textarea{
+        width: 80vw;
+    }
+}
